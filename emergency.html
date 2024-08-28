@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency</title>
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html"><img src="logo.jpg" alt="iReportCrime Logo"></a>
+                <h1>iReportCrime</h1>
+                <p>Your safety, our priority</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Type Keyword">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+    <button id="button" onclick="doSomething()">Click Me</button>
+
+    <p id="greeting">CLICK THE BUTTON IF YOUR IN DANGER!!</p>
+
+    <script>
+        function doSomething(){
+            // Change the text inside the paragraph element
+            document.getElementById("greeting").innerHTML = "Dont panic! Help is on the way";
+            
+            // Display a pop-up message
+            alert("Authorities are alerted!");
+        }
+    </script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Crime Reporting Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

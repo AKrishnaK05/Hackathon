@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width initial-scale=1.0">
+    <title>Volunteers</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html"><img src="logo.jpg" alt="iReportCrime Logo"></a>
+                <h1>iReportCrime</h1>
+                <p>Your safety, our priority</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Type Keyword">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Crime Reporting Form</h2>
+
+  <form action="/submit" method="post">
+    <h3>Step 1: Fill the following registration details:</h3>
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name"><br><br>
+
+    <label for="middle_name">Middle Name:</label>
+    <input type="text" id="middle_name" name="middle_name"><br><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name"><br><br>
+
+    <label   
+ for="birth_date">Birth Date:</label>
+    <input type="date" id="birth_date" name="birth_date"><br><br>
+
+    <label for="gender">Gender:</label>   
+
+    <input type="radio" id="male" name="gender" value="Male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label><br><br>   
+
+
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address"></textarea><br><br>   
+
+
+    <label for="contact_number">Contact Number:</label>
+    <input type="tel" id="contact_number" name="contact_number"><br><br>
+
+    <h3>Step 2: Fill the following Log-in details:</h3>
+    <label for="login_name">Choose login name:</label>
+    <input type="text" id="login_name" name="login_name"><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="re_type_password">Re-Type Password:</label>
+    <input type="password" id="re_type_password" name="re_type_password"><br><br>   
+
+
+    <input type="reset" value="Reset">
+    <input type="submit" value="Submit">
+  </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Crime Reporting Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

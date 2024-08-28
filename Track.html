@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Complaint</title>
+    <link rel="stylesheet" href="track.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html"><img src="logo.jpg" alt="iReportCrime Logo"></a>
+                <h1>iReportCrime</h1>
+                <p>Your safety, our priority</p>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Type Keyword">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form action="/submit" method="post">
+            <label for="acknowledgement-number">Acknowledgement Number:</label>
+            <input type="text" id="acknowledgement-number" name="acknowledgement-number" required>
+            <button type="button">Get OTP</button><br><br>
+            <label for="OTP">OTP:</label>
+            <input type="text" id="OTP" name="OTP" required><br><br>
+            <button type="submit">Submit</button><br><br>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Crime Reporting Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
